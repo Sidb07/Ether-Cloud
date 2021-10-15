@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+  --clr-font-dark-100:#121;
+  --clr-font-dark-200:#232;
+  --clr-side:#153;
+  --clr-card:#efe;
+  --clr-body:rgb(36, 37, 35);
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  margin:0;
+  display:grid;
+  grid-column-gap: 2rem;
+  
+  font-family: Lato;
+  background: linear-gradient(to top right, rgb(80, 190, 202) , rgb(19, 83, 112) , rgb(0, 0, 0));
+  /* background:var(--clr-body);  */
+  
+  animation-duration:5s;
+  animation-name:kf-open;
+}
+
+
+.hero{
+  color:rgb(0, 1, 66);
+  background: url("../background1.jpg") center no-repeat;
+  background-size:cover;
+  box-shadow:0 0 10px rgb(0, 132, 255);
+  z-index:1;
+  
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
+  grid-area:hero;
+  
+}
+.hero > h1{
+  margin:1;
+  font-size:60px;
+  text-shadow: 0px 2px 6px rgb(255, 255, 255);
+}
+.hero > h5{
+    margin:1;
+    font-size:20px;
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  }

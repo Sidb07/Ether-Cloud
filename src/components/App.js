@@ -37,6 +37,7 @@ class App extends Component {
 
     //Load account
     const accounts = await web3.eth.getAccounts()
+    console.log(accounts[0]);
     this.setState({ account: accounts[0] })
 
     // Network ID
@@ -53,11 +54,14 @@ class App extends Component {
       this.setState({ filesCount })
       
       // Load files&sort by the newest
-      for (var i = filesCount; i >= 1; i--) {
+      for (var i = 1; i <= filesCount; i++) {
         const file = await dstorage.methods.files(i).call()
-        this.setState({
-          files: [...this.state.files, file]
-        })
+        console.log(file)
+        if(file[7] === accounts[0]) {
+          this.setState({
+            files: [...this.state.files, file]
+          })
+        }
       }
     } 
     else {

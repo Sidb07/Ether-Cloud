@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { convertBytes } from './helpers';
 import moment from 'moment'
-//import ParticlesBg from 'particles-bg'
+import ParticlesBg from 'particles-bg'
 
 class Main extends Component {
 
@@ -14,8 +14,8 @@ class Main extends Component {
             <div className="content">
               <p>&nbsp;</p>
               
-              <div className="card mb-3 mx-auto bg-dark" style={{ maxWidth: '512px' }}>
-                <h2 className="text-white text-monospace bg-dark"><b><ins>Share File</ins></b></h2>
+              <div className="card mb-3 mx-auto bg-dark" style={{ maxWidth: '512px' , color:'white'}}>
+                <h2 fontFamily="Arial"><b>Share File</b></h2>
                   <form onSubmit={(event) => {
                     event.preventDefault()
                     const description = this.fileDescription.value
@@ -32,13 +32,14 @@ class Main extends Component {
                             required />
                       </div>
                     <input type="file" onChange={this.props.captureFile} className="text-white text-monospace"/>
-                    <button type="submit" className="btn-primary btn-block"><b>Upload!</b></button>
+                    <br></br>
+                    <button type="submit" className="button button2"><b>Upload!</b></button>
                   </form>
               </div>
 
               <p>&nbsp;</p>
               
-              <table className="table-sm table-bordered text-monospace" style={{ width: '1000px', maxHeight: '450px'}}>
+              <table className="table-sm table-bordered text-monospace bg-dark text-white" style={{ width: '1000px', maxHeight: '450px'}}>
                 <thead style={{ 'fontSize': '15px' }}>
                   <tr className="bg-dark text-white">
                     <th scope="col" style={{ width: '10px'}}>ID</th>
@@ -87,7 +88,9 @@ class Main extends Component {
           </main>
         </div>
       </div>
-      
+      <ParticlesBg color="#45b6fe" num={105} type="cobweb" bg={true} />
+      <ParticlesBg color="#82eefd" num={150} type="cobweb" bg={true} />
+      <ParticlesBg color="#ffffff" num={200} type="cobweb" bg={true} />
       </>
     );
   }

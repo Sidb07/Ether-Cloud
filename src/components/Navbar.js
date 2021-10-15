@@ -9,7 +9,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-dark bg-dark p-0 text-monospace">
         <a
           className="navbar-brand col-sm-3 col-md-2 mr-0"
-          href="http://www.dappuniversity.com/bootcamp"
+          href="https://github.com/Sidb07/Ether-Cloud"
           target="_blank"
           rel="noopener noreferrer"
           style={{fontFamily: "Arial"}}
@@ -17,6 +17,7 @@ class Navbar extends Component {
           <img src={box} width="30" height="30" className="align-top" alt="" />
           Group 13 Project : EtherCloud - Blockchain Based Cloud Storage
         </a>
+        
         <ul className="navbar-nav px-3">
         <li>
             <small id="account">

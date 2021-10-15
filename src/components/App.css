@@ -1,1 +1,72 @@
 /* Styles go here */
+html {
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+  .app {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    background-color: black;
+    margin-bottom: 20px;
+  }
+
+  nav ul li {
+    padding: 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .current {
+    border-bottom: 4px solid white;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  .navbar.navbar-dark{
+    width:100%;
+    min-height: 60px;
+    margin:0px auto;
+    left:0;
+    right:0;
+    padding:0;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    /*cursor: pointer;*/
+    /*-webkit-transition-duration: 0.4s;  Safari */
+    transition-duration: 0.4s;
+  }
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
