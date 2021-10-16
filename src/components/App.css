@@ -53,6 +53,7 @@ html {
 }
 
 .button {
+    /* background: linear-gradient(to left, rgb(0,0,0), rgb(0, 0, 0)); */
     background-color: #000000;
     border: none;
     color: white;
@@ -62,7 +63,7 @@ html {
     display: inline-block;
     font-size: 20px;
     margin: 4px 2px;
-    /*cursor: pointer;*/
+    cursor: pointer;
     /*-webkit-transition-duration: 0.4s;  Safari */
     transition-duration: 0.4s;
   }
