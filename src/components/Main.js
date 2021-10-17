@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { convertBytes } from './helpers';
-import moment from 'moment'
-import ParticlesBg from 'particles-bg'
+import moment from 'moment';
+import ParticlesBg from 'particles-bg';
+import './App.css'
 
 class Main extends Component {
 
@@ -14,8 +15,8 @@ class Main extends Component {
             <div className="content">
               <p>&nbsp;</p>
               
-              <div className="card mb-3 mx-auto bg-dark" style={{ maxWidth: '512px' , color:'white'}}>
-                <h2 fontFamily="Arial"><b>Share File</b></h2>
+              <div className="card mb-3 mx-auto bg-dark" style={{ maxWidth: '512px' , color:'white', boxShadow:'5px 5px 10px rgb(80, 190, 202)'}}>
+                <h2 fontFamily="Arial"><b>Upload File</b></h2>
                   <form onSubmit={(event) => {
                     event.preventDefault()
                     const description = this.fileDescription.value
@@ -27,29 +28,29 @@ class Main extends Component {
                             id="fileDescription"
                             type="text"
                             ref={(input) => { this.fileDescription = input }}
-                            className="form-control text-monospace"
+                            className="form-control"
                             placeholder="Add Description..."
                             required />
                       </div>
                     <input type="file" onChange={this.props.captureFile} className="text-white text-monospace"/>
                     <br></br>
-                    <button type="submit" className="button button2"><b>Upload!</b></button>
+                    <button type="submit" className="button button2"><b>Upload</b></button>
                   </form>
               </div>
 
               <p>&nbsp;</p>
               
-              <table className="table-sm table-bordered text-monospace bg-dark text-white" style={{ width: '1000px', maxHeight: '450px'}}>
+              <table className="table-sm table-bordered text-monospace bg-dark text-white" style={{ width: '1000px', maxHeight: '450px', boxShadow:'5px 5px 10px rgb(80, 190, 202)'}}>
                 <thead style={{ 'fontSize': '15px' }}>
                   <tr className="bg-dark text-white">
-                    <th scope="col" style={{ width: '10px'}}>ID</th>
+                    <th scope="col" style={{ width: '10px'}}>File No.</th>
                     <th scope="col" style={{ width: '200px'}}>Name</th>
                     <th scope="col" style={{ width: '230px'}}>Description</th>
                     <th scope="col" style={{ width: '120px'}}>File Type</th>
                     <th scope="col" style={{ width: '90px'}}>Size</th>
                     <th scope="col" style={{ width: '90px'}}>Date</th>
                     <th scope="col" style={{ width: '120px'}}>Uploader</th>
-                    <th scope="col" style={{ width: '120px'}}>IPFS Hash/view</th>
+                    <th scope="col" style={{ width: '120px'}}>IPFS Hash/Share</th>
                   </tr>
                 </thead>
                 { this.props.files.map((file, key) => {

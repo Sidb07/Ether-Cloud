@@ -9,7 +9,7 @@
 }
 
 body{
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
   margin:0;
   display:grid;
@@ -28,7 +28,9 @@ body{
   color:rgb(0, 1, 66);
   background: url("../background1.jpg") center no-repeat;
   background-size:cover;
-  box-shadow:0 0 10px rgb(0, 132, 255);
+  height: 30vh;
+  width: 100vw;
+  box-shadow:0 0 10px rgb(34, 37, 41);
   z-index:1;
   
   display:flex;
@@ -49,3 +51,16 @@ body{
     font-size:20px;
     text-shadow: 0px 0px 4px rgb(255, 255, 255);
   }
+
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+  
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+  

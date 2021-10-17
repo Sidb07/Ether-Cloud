@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import box from '../box.png';
 import './Home.css';
+import Zoom from 'react-reveal/Zoom';
 
 class Home extends Component {
     render() {
@@ -22,10 +23,16 @@ class Home extends Component {
             <div class="hero">
                 <h1 class="hero-title"><b>EtherCloud</b></h1>
                 <h5 class="hero-slogan"><b>A Blockchain Based Cloud Storage Platform</b></h5>
+                <br/>
+                <a class="button button2" href="/App"><b>Get Started </b><i class="arrow right"></i></a>
+      
             </div>
-            
-            
 
+            <div>
+            <Zoom top cascade>
+              <h1 class="hero-title">Hello World</h1>
+            </Zoom>
+            </div>
           </div>
         );
     }
