@@ -15,7 +15,7 @@ class Main extends Component {
             <div className="content">
               <p>&nbsp;</p>
               
-              <div className="card mb-3 mx-auto bg-dark" style={{ maxWidth: '512px' , color:'white', boxShadow:'5px 5px 10px rgb(80, 190, 202)'}}>
+              <div className="card mb-3 mx-auto bg-dark" style={{ maxWidth: '512px' , color:'white', boxShadow:'5px 5px 10px rgb(0, 0, 0)'}}>
                 <h2 fontFamily="Arial"><b>Upload File</b></h2>
                   <form onSubmit={(event) => {
                     event.preventDefault()
@@ -40,7 +40,7 @@ class Main extends Component {
 
               <p>&nbsp;</p>
               
-              <table className="table-sm table-bordered text-monospace bg-dark text-white" style={{ width: '1000px', maxHeight: '450px', boxShadow:'5px 5px 10px rgb(80, 190, 202)'}}>
+              <table className="table-sm table-bordered text-monospace bg-dark text-white" style={{ width: 'auto', boxShadow:'5px 5px 10px rgb(0, 0, 0)'}}>
                 <thead style={{ 'fontSize': '15px' }}>
                   <tr className="bg-dark text-white">
                     <th scope="col" style={{ width: '10px'}}>File No.</th>
