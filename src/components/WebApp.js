@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import App from './App'
-import Home from './Home'
+import App from './App';
+import Home from './Home';
+import About from './About';
+import HowitWorks from './HowitWorks';
 import './App.css';
 
 class WebApp extends Component {
@@ -20,6 +22,8 @@ class WebApp extends Component {
                             <div>
                                 <a class="button button2" href="/Home">Home</a>
                                 <a class="button button2" href="/App">App</a>
+                                <a class="button button2" href="/About">About</a>
+                                <a class="button button2" href="/HowitWorks">How It Works</a>
                             </div>
                         </a>
                     </nav>
@@ -27,7 +31,10 @@ class WebApp extends Component {
                     <Switch>
                         <Route exact path="/App" component={App} />
                         <Route exact path="/Home" component={Home} />
+                        <Route exact path="/About" component={About} />
+                        <Route exact path="/HowitWorks" component={HowitWorks} />
                     </Switch>
+
                 </Router>
             </div>
         );

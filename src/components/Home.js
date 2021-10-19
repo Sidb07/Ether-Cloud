@@ -17,12 +17,10 @@ class Home extends Component {
 
         </div>
 
-        <br/>
-
         <Fade right>
           <div className="card mb-3 bg-dark" style={{width:'75%', minHeight:'auto', color: 'white', boxShadow: '5px 5px 10px rgb(0, 0, 0)', marginLeft:10, marginTop:10, marginRight:10, marginBottom:10 }}>
             <div class="container-row">
-              <div class="hero-image" style={{ marginLeft:10, marginTop:10, marginRight:20, marginBottom:10 }}>
+              <div class="hero-image" style={{ marginLeft:10, marginTop:20, marginRight:20, marginBottom:10 }}>
                 <img src={test} width="250" height="300" alt="" />
               </div>
               <div class="A3L_Slogan">
