@@ -6,9 +6,8 @@ class About extends Component {
   render() {
     return (
       <div>
-        <Navbar/>
+        <Navbar />
         <h1>About Page</h1>
-
       </div>
     );
   }
