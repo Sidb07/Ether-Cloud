@@ -45,7 +45,7 @@ html {
     margin-bottom: 15px;
   }
 
-  .navbar.navbar-dark{
+.navbar.navbar-dark{
     width:100%;
     min-height: 60px;
     margin:0px auto;
@@ -54,9 +54,18 @@ html {
     padding:0;
 }
 
+.navbar.center{
+  display: flex!important;
+  justify-content:space-around; 
+  /* margin-left: 50%; */
+  flex-basis: content; 
+  /* left:0; */
+} 
+
 .button {
     /* background: linear-gradient(to left, rgb(0,0,0), rgb(0, 0, 0)); */
     background-color: #000000;
+    /* align-items: center; */
     height: 40px;
     color: white;
     padding: 5px 10px;
@@ -70,11 +79,12 @@ html {
     /* padding-left: 3px; */
     /*-webkit-transition-duration: 0.4s;  Safari */
     transition-duration: 0.4s;
+    
   }
 
 .button2:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
+}
 
   body{
     width: 100%;
@@ -83,10 +93,10 @@ html {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-    background: linear-gradient(to top right, rgb(80, 190, 202) , rgb(19, 83, 112) , rgb(0, 0, 0));
+    background-color: #242424;
+    /* background: linear-gradient(to top right, rgb(80, 190, 202) , rgb(19, 83, 112) , rgb(0, 0, 0)); */
   }
-  
-  
+
   .hero{
     color:rgb(0, 1, 66);
     background: url("../Images/background1.jpg") center no-repeat;
@@ -104,6 +114,7 @@ html {
     grid-area:hero;
     
   }
+
   .hero > h1{
     margin:1;
     font-size:60px;
@@ -138,4 +149,37 @@ html {
   .container-row .A3L_Slogan {
     flex: 5;
   }
+
+  ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
   
+  li {
+    color: white;
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .active {
+    background-color: #04AA6D;
+  }
+
+  .card {
+    /* background-color: #1f1f1f; */
+    background: linear-gradient(to right, rgb(47, 107, 114) , rgb(19, 83, 112) , rgb(19, 19, 19));
+  }
