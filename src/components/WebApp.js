@@ -13,7 +13,7 @@ class WebApp extends Component {
 			<div>
 				<Router>
 					<div>
-						<ul style={{ height: "52px" }}>
+						<ul style={{ height: "53px" }}>
 
 							<li>
 								<h7
@@ -37,7 +37,7 @@ class WebApp extends Component {
 
 							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold" }} href="/About">ABOUT</a></li>
 							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold" }} href="/HowitWorks">HOW IT WORKS</a></li>
-							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold" }} href="/App">APP</a></li>
+							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold" }} href="/App">DAPP</a></li>
 							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold" }} href="/Home">HOME</a></li>
 
 						</ul>

@@ -5,7 +5,6 @@ import ParticlesBg from 'particles-bg';
 import './App.css'
 
 class Main extends Component {
-
   render() {
     return (
       <>
@@ -15,7 +14,7 @@ class Main extends Component {
             <div className="content">
               <p>&nbsp;</p>
               
-              <div className="card mb-3 mx-auto bg-dark" style={{ maxWidth: '512px' , color:'white', boxShadow:'5px 5px 10px rgb(0, 0, 0)'}}>
+              <div className="card2 mb-3 mx-auto bg-dark" style={{ maxWidth: '512px' , color:'white', boxShadow:'5px 5px 10px rgb(0, 0, 0)'}}>
                 <h2 fontFamily="Arial"><b>Upload File</b></h2>
                   <form onSubmit={(event) => {
                     event.preventDefault()
@@ -89,9 +88,11 @@ class Main extends Component {
           </main>
         </div>
       </div>
-      <ParticlesBg color="#45b6fe" num={105} type="cobweb" bg={true} />
+      {/* <ParticlesBg color="#45b6fe" num={105} type="cobweb" bg={true} />
       <ParticlesBg color="#82eefd" num={150} type="cobweb" bg={true} />
-      <ParticlesBg color="#ffffff" num={200} type="cobweb" bg={true} />
+      <ParticlesBg color="#ffffff" num={200} type="cobweb" bg={true} /> */}
+      <ParticlesBg color="#0249fe" num={150} type="cobweb" bg={true} />
+      <ParticlesBg color="#fea0ff" num={150} type="cobweb" bg={true} />
       </>
     );
   }
