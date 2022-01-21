@@ -13,8 +13,7 @@ class WebApp extends Component {
 			<div>
 				<Router>
 					<div>
-						<ul style={{ height: "53px" }}>
-
+						<ul style={{ height: "53px", listStyle:"none", backgroundColor:"#333" }}>
 							<li>
 								<h7
 									className="navbar-brand col-sm-3 col-md-2 mr-0"
@@ -24,7 +23,6 @@ class WebApp extends Component {
 									<img src={EC} width="120" height="40" className="align-top" alt="" />
 								</h7>
 							</li>
-
 							<li>
 								<h7
 									className="navbar-brand col-sm-3 col-md-2 mr-0"
@@ -34,12 +32,10 @@ class WebApp extends Component {
 								ETHERCLOUD
 								</h7>
 							</li>
-
-							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold" }} href="/About">ABOUT</a></li>
-							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold" }} href="/HowitWorks">HOW IT WORKS</a></li>
-							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold" }} href="/App">DAPP</a></li>
-							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold" }} href="/Home">HOME</a></li>
-
+							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold", textDecoration: "none", color: "white" }} href="/About">ABOUT</a></li>
+							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold", textDecoration: "none", color: "white" }} href="/HowitWorks">HOW IT WORKS</a></li>
+							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold", textDecoration: "none", color: "white" }} href="/App">DAPP</a></li>
+							<li style={{ float: "right" }}><a style={{ fontSize: "15px", paddingTop: "15px", fontWeight: "bold", textDecoration: "none", color: "white" }} href="/Home">HOME</a></li>
 						</ul>
 					</div>
 					<Switch>
@@ -49,6 +45,7 @@ class WebApp extends Component {
 						<Route exact path="/HowitWorks" component={HowitWorks} />
 					</Switch>
 				</Router>
+
 			</div>
 		);
 	}

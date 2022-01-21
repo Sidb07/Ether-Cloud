@@ -57,13 +57,10 @@ p {
 .navbar.center{
   display: flex!important;
   justify-content:space-around; 
-  /* margin-left: 50%; */
   flex-basis: content; 
-  /* left:0; */
 } 
 
 .button {
-  /* background: linear-gradient(to left, rgb(0,0,0), rgb(0, 0, 0)); */
   background-color: #000000;
   align-items: center;
   height: 40px;
@@ -74,14 +71,12 @@ p {
   display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
-  cursor: pointer;
   border-radius: 8px;
-  /* padding-left: 3px; */
-  /*-webkit-transition-duration: 0.4s;  Safari */
   transition-duration: 0.4s;   
 }
 
 .button2:hover {
+  background-color: purple;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -92,19 +87,15 @@ body{
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; 
-  background-color: #111441;
-  /* background: url("../Images/Homebg.png") center no-repeat; */
-  /* background: linear-gradient(to top right, rgb(17, 20, 65) , rgb(28, 19, 112) , rgb(36, 11, 105)); */
+  background-color: #000000;
 }
 
 .hero{
   color:rgb(255, 255, 255);
   background: url("../Images/Homebg.png") center no-repeat;
-  /* background-color: rgb(255, 255, 0); */
   background-size:cover;
   height: 100vh;
   width: 100vw;
-  /* box-shadow:0 0 10px rgb(0, 0, 0); */
   z-index:1;    
   display:flex;
   flex-direction:column;
@@ -153,11 +144,11 @@ body{
 
 
 ul {
-  list-style-type: none;
+  list-style-type: square;
   margin: auto;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  /* overflow: hidden; */
+  /* background-color: #333; */
 }
   
 li {
@@ -179,21 +170,24 @@ li a:hover {
 }
 
 .card {
-  /* background-color: #1f1f1f; */
-  background: linear-gradient(to right, rgb(47, 107, 114) , rgb(19, 83, 112) , rgb(19, 19, 19));
+  /* background-color: yellow; */
+  background: linear-gradient(to left, rgb(255, 252, 0) , rgb(255, 120, 0) , rgb(0, 0, 0));
+}
+
+.table-sm {
+  background-color: rgb(0, 0, 0);
+
 }
 
 .card2 {
-  /* background-color: rgb(40, 14, 51); */
-  background: linear-gradient(to right, rgb(48, 50, 53) , rgb(51, 51, 51) , rgb(19, 19, 19));
+  background-color: rgb(0, 0, 0);
 }
 
 .aboutProj{
   color:rgb(255, 255, 255);
   background: url("../Images/testbg.webp") center no-repeat;
-  /* background-color: #000000; */
   background-size:cover;
-  height: 40vw;
+  height: 40vh;
   width: 100vw;
   box-shadow:0 0 10px rgb(0, 0, 0);
   z-index:1;    
@@ -223,7 +217,7 @@ li a:hover {
   color: rgb(255, 255, 255);
   padding: 5px 10px;
   text-align: left;
-  text-decoration: none;
+  /* text-decoration: none; */
   display: inline-block;
   font-size: 23px;
   margin: 4px 2px;
@@ -243,12 +237,83 @@ li a:hover {
   margin-left: 200px;
   margin:1;
   font-size:90px;
-  text-shadow: 0px 2px 6px rgb(0, 0, 0);
+  text-shadow: 0px 4px 10px rgb(0, 0, 0);
 }
 
 .hero2 > h5{
   margin-left: 30px;
   margin:1;
   font-size:40px;
+  text-shadow: 0px 3px 8px rgb(0, 0, 0);
+}
+
+.hero3{
+  color:rgb(255, 255, 255);
+  background: url("../Images/Homebg2.png") center no-repeat;
+  background-size:cover;
+  height: 100vh;
+  width: 100vw;
+  z-index:1;    
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:left;    
+  grid-area:hero;   
+}
+
+.intro > h1{
+  margin-top: 200px;
+  margin-left: 50%;
+  margin:1;
+  font-size:60px;
+  text-shadow: 0px 2px 6px rgb(0, 0, 0);
+}
+
+.intro > h5{
+  margin-left: 52%;
+  margin:1;
+  font-size:25px;
   text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+.hero4{
+  color:rgb(255, 255, 255);
+  background: url("../Images/Homebg3.png") center no-repeat;
+  background-size:cover;
+  height: 100vh;
+  width: 100vw;
+  z-index:1;    
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:left;    
+  grid-area:hero;   
+}
+
+.objective > h1{
+  margin-left: 5%;
+  margin-top: 200px;
+  margin-right: 50%;
+  margin:1;
+  font-size:60px;
+  text-shadow: 0px 2px 6px rgb(0, 0, 0);
+}
+
+.objective > h5{
+  margin-left: 7%;
+  margin-right: 40%;
+  margin:1;
+  font-size:25px;
+  text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+.footerc {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }

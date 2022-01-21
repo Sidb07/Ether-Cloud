@@ -6,9 +6,9 @@ class Navbar extends Component {
   render() {
     const isAccount = this.props.account;
     return (
-        <div>
+        <div style={{ top: "53px" }}>
           {isAccount ?
-            <ul>
+            <ul style={{ height: "53px", listStyle:"none" }}>
               <li>
                 <small id="account">
                   <a target="_blank"

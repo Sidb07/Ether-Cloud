@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
+import bg1 from '../Images/Aboutus.png';
 import profile1 from '../Images/profile1.png';
 import profile2 from '../Images/profile2.jpeg';
-import profile3 from '../Images/profile3.gif';
+import profile3 from '../Images/rutvijp.jpeg';
 import './App.css';
 
 class About extends Component {
@@ -10,15 +11,7 @@ class About extends Component {
     return (
       <div>
 
-        <div class="aboutProj">
-          <h5 class="aboutProj-slogan" style={{ fontFamily: "Arial" }}><b>Group ID 13</b></h5>
-          <h1 class="aboutProj-title" style={{ fontFamily: "Arial" }}><b>EtherCloud</b></h1>
-          <h5 class="aboutProj-slogan" style={{ fontFamily: "Arial" }}><b>A Blockchain Based Cloud Storage Platform</b></h5>
-
-          <br />
-          {/* <a class="button button2" href="/App"><b>Get Started </b><i class="arrow right"></i></a> */}
-
-        </div>
+        <img src={bg1} width="100%" height="900px" alt="" />
 
         <Fade right>
           <div className="card mb-3" style={{width:'75%', minHeight:'auto', color: 'white', boxShadow: '5px 5px 10px rgb(0, 0, 0)', marginLeft:10, marginTop:10, marginRight:10, marginBottom:10 }}>
@@ -33,7 +26,7 @@ class About extends Component {
                 <div class="slogan_catchphrase" style={{ fontFamily: "Arial", fontSize: 20 }}>
                   <p>
                     Roll no: 42023 <br/>
-                    PRN: 71909XXXX
+                    PRN: 71909229K
                   </p>
                 </div>
               </div>
@@ -54,7 +47,7 @@ class About extends Component {
                 <div class="slogan_catchphrase" style={{ fontFamily: "Arial", fontSize: 20 }}>
                   <p>
                     Roll no: 42009 <br/>
-                    PRN: 71909XXXX
+                    PRN: 71909186B
                   </p>
                 </div>
               </div>
@@ -75,13 +68,35 @@ class About extends Component {
                 <div class="slogan_catchphrase" style={{ fontFamily: "Arial", fontSize: 20 }}>
                   <p>
                     Roll no: 42043 <br/>
-                    PRN: 71909XXXX
+                    PRN: 71909593L
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </Fade>
+
+        <div class="footerc">
+					<div class="container-row">
+            {/* <div class="hero-image" style={{ left:0, marginTop:20, marginBottom:10 }}>
+              <img src={logo} width="200" height="100" alt="" />
+            </div> */}
+            <div class="A3L_Slogan">
+              <div class="slogan_title" style={{ marginTop:10, fontFamily: "Arial", color:"white" }}>
+                <h1><b>BE Final Year Project</b><h6> <b>Group ID 13</b></h6></h1>
+              </div>
+              <div class="slogan_catchphrase" style={{ fontFamily: "Arial", fontSize: 20, color:"white" }}>
+                <p>
+                  Yash Dantale<br/>
+                  Rutvij Hadap<br/>
+                  Siddharth Bawane<br/>
+                  PES Modern College Of Engineering
+                </p>
+              </div>
+            </div>
+          </div>
+				</div> 
+
       </div>
     );
   }

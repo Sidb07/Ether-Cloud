@@ -14,7 +14,7 @@ class Main extends Component {
             <div className="content">
               <p>&nbsp;</p>
               
-              <div className="card2 mb-3 mx-auto bg-dark" style={{ maxWidth: '512px' , color:'white', boxShadow:'5px 5px 10px rgb(0, 0, 0)'}}>
+              <div className="card2 mb-3 mx-auto" style={{ maxWidth: '512px' , color:'white', boxShadow:'5px 5px 10px rgb(0, 0, 0)'}}>
                 <h2 fontFamily="Arial"><b>Upload File</b></h2>
                   <form onSubmit={(event) => {
                     event.preventDefault()
@@ -39,10 +39,10 @@ class Main extends Component {
 
               <p>&nbsp;</p>
               
-              <table className="table-sm table-bordered text-monospace bg-dark text-white" style={{ width: 'auto', boxShadow:'5px 5px 10px rgb(0, 0, 0)'}}>
+              <table className="table-sm table-bordered text-monospace text-white" style={{ width: 'auto', boxShadow:'5px 5px 10px rgb(0, 0, 0)'}}>
                 <thead style={{ 'fontSize': '15px' }}>
-                  <tr className="bg-dark text-white">
-                    <th scope="col" style={{ width: '10px'}}>File No.</th>
+                  <tr className="text-white">
+                    {/* <th scope="col" style={{ width: '10px'}}>File No.</th> */}
                     <th scope="col" style={{ width: '200px'}}>Name</th>
                     <th scope="col" style={{ width: '230px'}}>Description</th>
                     <th scope="col" style={{ width: '120px'}}>File Type</th>
@@ -56,7 +56,7 @@ class Main extends Component {
                   return(
                     <thead style={{ 'fontSize': '15px', 'fontFamily': 'Arial', 'fontWeight': 'bold' }} key={key}>
                       <tr>
-                        <td>{file.fileId}</td>
+                        {/* <td>{file.fileId}</td> */}
                         <td>{file.fileName}</td>
                         <td>{file.fileDescription}</td>
                         <td>{file.fileType}</td>
@@ -88,11 +88,27 @@ class Main extends Component {
           </main>
         </div>
       </div>
-      {/* <ParticlesBg color="#45b6fe" num={105} type="cobweb" bg={true} />
-      <ParticlesBg color="#82eefd" num={150} type="cobweb" bg={true} />
-      <ParticlesBg color="#ffffff" num={200} type="cobweb" bg={true} /> */}
-      <ParticlesBg color="#0249fe" num={150} type="cobweb" bg={true} />
-      <ParticlesBg color="#fea0ff" num={150} type="cobweb" bg={true} />
+      <ParticlesBg color="#370665" num={100} type="cobweb" bg={true} />
+      <ParticlesBg color="#eeeded" num={100} type="cobweb" bg={true} />
+      <ParticlesBg color="#f14a16" num={100} type="cobweb" bg={true} />
+      <ParticlesBg color="#fc9918" num={100} type="cobweb" bg={true} />
+      
+      {/* <div class="footerc" style={{position:"absolute"}}>
+					<div class="container-row">
+            <div class="A3L_Slogan" style={{marginLeft:30}}>
+              <div class="slogan_title" style={{ marginTop:10, fontFamily: "Arial", color:"white" }}>
+                <h1><b>Dopetech Solutions</b><h6> <b>CEO Rutvij Hadap</b></h6></h1>
+              </div>
+              <div class="slogan_catchphrase" style={{ fontFamily: "Arial", fontSize: 20, color:"white" }}>
+                <p>
+                  Random Stuff <br/>
+                  Baki TP
+                </p>
+              </div>
+            </div>
+          </div>
+				</div>  */}
+
       </>
     );
   }
