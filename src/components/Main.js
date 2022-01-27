@@ -92,22 +92,6 @@ class Main extends Component {
       <ParticlesBg color="#eeeded" num={100} type="cobweb" bg={true} />
       <ParticlesBg color="#f14a16" num={100} type="cobweb" bg={true} />
       <ParticlesBg color="#fc9918" num={100} type="cobweb" bg={true} />
-      
-      {/* <div class="footerc" style={{position:"absolute"}}>
-					<div class="container-row">
-            <div class="A3L_Slogan" style={{marginLeft:30}}>
-              <div class="slogan_title" style={{ marginTop:10, fontFamily: "Arial", color:"white" }}>
-                <h1><b>Dopetech Solutions</b><h6> <b>CEO Rutvij Hadap</b></h6></h1>
-              </div>
-              <div class="slogan_catchphrase" style={{ fontFamily: "Arial", fontSize: 20, color:"white" }}>
-                <p>
-                  Random Stuff <br/>
-                  Baki TP
-                </p>
-              </div>
-            </div>
-          </div>
-				</div>  */}
 
       </>
     );

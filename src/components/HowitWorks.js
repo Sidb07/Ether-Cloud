@@ -18,7 +18,7 @@ class HowitWorks extends Component {
   render() {
     return (
       <div>
-        {/* <h1>How it Works Page</h1> */}
+        
         <div style={{ alignItems:"center" }}>
           <img src={db} width="100%" height="75%" alt="" />
         </div>
@@ -40,15 +40,15 @@ class HowitWorks extends Component {
         <div class="footerc">
 					<div class="container-row">
             <div class="A3L_Slogan">
-              <div class="slogan_title" style={{ marginTop:10, fontFamily: "Arial", color:"white" }}>
-                <h1><b>BE Final Year Project</b><h6> <b>Group ID 13</b></h6></h1>
+              <div class="slogan_title" style={{ marginTop:5, fontFamily: "Arial", color:"white" }}>
+                <h1><b>EtherCloud</b><h6> BE Final Year Project 2021-22 </h6></h1>
               </div>
               <div class="slogan_catchphrase" style={{ fontFamily: "Arial", fontSize: 20, color:"white" }}>
                 <p>
-                  Yash Dantale<br/>
-                  Rutvij Hadap<br/>
-                  Siddharth Bawane<br/>
-                  PES Modern College Of Engineering
+                  <h6 style={{ fontWeight: "bold" }}>
+                    <a href='https://github.com/Sidb07/Ether-Cloud' style={{ fontWeight: "bold", textDecoration: "none", color: "white" }}>GitHub  </a>
+                    |  Group ID 13
+                  </h6>
                 </p>
               </div>
             </div>

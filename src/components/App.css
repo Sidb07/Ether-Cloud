@@ -182,33 +182,6 @@ li a:hover {
 .card2 {
   background-color: rgb(0, 0, 0);
 }
-
-.aboutProj{
-  color:rgb(255, 255, 255);
-  background: url("../Images/testbg.webp") center no-repeat;
-  background-size:cover;
-  height: 40vh;
-  width: 100vw;
-  box-shadow:0 0 10px rgb(0, 0, 0);
-  z-index:1;    
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;    
-  grid-area:hero;   
-}
-
-.aboutProj > h1{
-  margin:1;
-  font-size:60px;
-  text-shadow: 0px 2px 6px rgb(0, 0, 0);
-}
-
-.aboutProj > h5{
-  margin:1;
-  font-size:20px;
-  text-shadow: 0px 0px 4px rgb(0, 0, 0);
-}
   
 .buttonHome {
   background-color: #140029;
